@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            padding: 0px;
+            margin: 0px;
+        } */
+        body{
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/July_night_sky_%2835972569256%29.jpg/1200px-July_night_sky_%2835972569256%29.jpg");
+            background-size: cover;
+         }
+        .solar{
+            height: 900px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .sun{
+            height:100px;
+            width:100px;
+            border:2px solid;
+            border-radius: 50%;
+            background-image: url("https://imageio.forbes.com/blogs-images/startswithabang/files/2017/09/1-6ki7918Px2N2LJW8JdAzEg.jpg?format=jpg&height=600&width=1200&fit=bounds"); 
+            background-size:cover;
+        }
+        .circle1{
+            height:200px;
+            width:200px;
+            border:2px solid;
+            border-radius: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            animation:planet 15s linear 0s 10 normal;
+         }
+            @keyframes planet{
+            from{
+
+            }
+            to{
+                transform:rotate(360deg);
+            }
+        }  
+       .mercury{
+           height:50px;
+           width:50px;
+           border:2px solid;
+           border-radius: 50%;
+           position:absolute;
+           top:180px;
+           left: 50px;
+           background-image: url("https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg?w=4096&format=jpeg&crop=1");
+           background-size: cover;
+       }
+       .circle2{
+         height: 300px;
+         width:300px;
+         border:2px solid;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         border-radius: 50%;
+         position:relative;
+         animation:planet 15s linear 0s 10 normal;
+       }
+       .venus{
+        height:50px;
+        width:50px;
+        border:2px solid;
+        border-radius: 50%;
+        position:absolute;
+        top:90px;
+        left: 265px;
+        background-image:url("https://i.natgeofe.com/n/498317fc-da20-4123-a7b9-cbff247a063b/PIA00271_2x3.jpg");
+        background-size: cover;
+       }
+       .circle3{
+        height:400px;
+        width:400px;
+        border: 2px solid;
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position:relative;
+        animation:planet 15s linear 0s 10 normal;
+       }
+       .earth{
+        height: 50px;
+        width:50px;
+        border: 2px solid;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 120px;
+        left:370px;
+        background-image: url("https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg");
+        background-size: cover;
+       }
+       .circle4{
+        height: 500px;
+        width:500px;
+        border: 2px solid;
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        animation:planet 15s linear 0s 10 normal;
+       }
+       .mars{
+        height:50px;
+        width:50px;
+        border: 2px solid;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 200px;
+        right:475px;
+        background-image: url("https://i.natgeofe.com/n/98665efd-d2a7-4c96-a68c-3f5102faffe9/1067.jpg");
+        background-size: cover;
+       }
+       .circle5{
+         height:600px;
+         width:600px;
+         border:2px solid;
+         border-radius: 50%;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         position: relative;
+         animation:planet 15s linear 0s 10 normal;
+       }
+       .jupiter{
+        height: 50px;
+        width:50px;
+        border: 2px solid;
+        border-radius: 50%;
+        position: absolute;
+        top:100px;
+        right: 523px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Jupiter.jpg/800px-Jupiter.jpg");
+        background-size: cover;
+       }
+       .circle6{
+        height:700px;
+         width:700px;
+         border:2px solid;
+         border-radius: 50%;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         position: relative;
+         animation:planet 15s linear 0s 10 normal;
+       }
+       .saturn{
+        height: 50px;
+        width:50px;
+        border: 2px solid;
+        border-radius: 50%;
+        position: absolute;
+        bottom:100px;
+        right: 600px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdw3tdBAyk4uTAXguUCdrpcoxWgm1M8r0jYw&s");
+        background-size: cover;
+       }
+       .circle7{
+        height:800px;
+         width:800px;
+         border:2px solid;
+         border-radius: 50%;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         position: relative;
+         animation:planet 15s linear 0s 10 normal;
+       }
+       .uranus{
+            height: 50px;
+            width:50px;
+            border: 2px solid;
+            border-radius: 50%;
+            position: absolute;
+            bottom:100px;
+          left: 670px;
+          background-image: url("https://lh3.googleusercontent.com/proxy/qW3q3hDm-JXFAxGval1BsJhPPpkkVFfQAn3EEz3wHAMMEfvsWVNDFjfvOkVGp7ulkyvRD71p2K8qyyKYUg4pz-xCHGz-tVhQmnEbFl0KJUNtqZZuQ7nhxAaU");
+          background-size: contain;
+       }
+       .circle8{
+        height:900px;
+         width:900px;
+         border:2px solid;
+         border-radius: 50%;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         position: relative;
+         animation:planet 15s linear 0s 10 normal;
+       }
+       .neptune{
+         height: 50px;
+            width:50px;
+            border: 2px solid;
+            border-radius: 50%;
+            position: absolute;
+            bottom:100px;
+            right: 730px;
+            background-image: url("https://science4fun.info/wp-content/uploads/2016/11/Neptune-planet.jpg");
+            background-size: cover;
+       }
+    </style>
+</head>
+<body>
+    <div class="solar">
+        <div class="circle8">
+            <div class="neptune"></div>
+            <div class="circle7">
+                <div class="uranus"></div>
+                <div class="circle6">
+                <div class="saturn"></div>
+                    <div class="circle5">
+                        <div class="jupiter"></div>
+                        <div class="circle4">
+                            <div class="mars"></div>
+                            <div class="circle3">
+                            <div class="earth"></div>
+                                <div class="circle2">
+                                <div class="venus"></div>
+                                    <div class="circle1">
+                                        <div class="mercury"></div>
+                                        <div class="sun"></div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div> 
+                </div>  
+            </div>  
+        </div>                       
+    </div>
+</body>
+</html>
